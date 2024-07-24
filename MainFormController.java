@@ -1,29 +1,36 @@
-
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.TextField;
-
-import java.util.ArrayList;
-import java.util.Arrays;
+import javafx.event.ActionEvent;
+import javafx.scene.chart.AreaChart;
+import javafx.scene.chart.NumberAxis;
+import javafx.scene.chart.XYChart;
+import javafx.scene.control.RadioButton;
 
 public class MainFormController {
 
 
-    public ComboBox<String> cmbLanguage;
+    public RadioButton rBtnFemale;
+    public RadioButton rBtnmale;
 
-    ArrayList<String> myLanguages = new ArrayList<>(
-            Arrays.asList("java", "PHP", "Koltin", "Ruby")
-    );
 
-    public void initialize() {
-        for (String name : myLanguages) {
-            cmbLanguage.getItems().add(name);
-        }
+    public void printDataOnAction(ActionEvent actionEvent) {
+//        if(rBtnFemale.isSelected()){
+//            System.out.println("Female");
+//        }
+//        if(rBtnmale.isSelected()) {
+//            System.out.println("Male");
+//        }
 
+//        if(rBtnFemale.isSelected()){
+//            System.out.println("Female");
+//        }
+//        else  {
+//            System.out.println("Male");
+//        }
+
+//        String gender = rBtnFemale.isSelected()?"Female":"Male";
+//        System.out.println(gender);
+
+
+     //   String gender = rBtnFemale.isSelected()?"Female":"Male";
+        System.out.println(rBtnFemale.isSelected()?"Female":"Male");
     }
-
-
 }
-
-
-
-

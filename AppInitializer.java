@@ -26,7 +26,7 @@ public class AppInitializer extends Application {
 
 
 
-        primaryStage.setScene(new Scene(FXMLLoader.load( getClass().getResource("MainForm.fxml"))));
+        primaryStage.setScene(new Scene(FXMLLoader.load( getClass().getResource("RadioButton/MainForm.fxml"))));
         primaryStage.show();
 
 
